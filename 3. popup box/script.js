@@ -21,7 +21,7 @@ alert("Selamat datang..");
 let lagi = true;
 
 // cara bacanya, selama lagi itu nilai nya terus maka pengulangan nya akan jalan terus,
-while (lagi === true) {
+while (lagi) {
   // kalo user menekan tombol oke maka iya akan masuk ke perulangan lagi
   let nama = prompt("masukan nama:");
   alert("halo " + nama);
