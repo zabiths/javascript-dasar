@@ -20,16 +20,7 @@
 // alert(jumlahTigaBilangan(1, 3, 1));
 
 function jumlahVolumeDuaKubus(a, b) {
-  let volumeA; 
-  let volumeB;
-  let hasil;
-
-  volumeA = a * a * a;
-  volumeB = b * b * b;
-
-  total = volumeA + volumeB;
-
-  return total;
+  return a* a * a + b * b * b;
 }
 
 // jumlahVolumeDuaKubus(8, 3);
