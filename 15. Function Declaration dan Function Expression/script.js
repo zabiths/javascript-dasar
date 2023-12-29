@@ -7,7 +7,7 @@
 
 // function expression
 let tampilPesan = function (name) {
-  alert("halo" + nama);
+  console.log("halo " + name);
 };
 
 tampilPesan("alfian");
