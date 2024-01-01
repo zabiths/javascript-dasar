@@ -27,7 +27,7 @@
 // }
 
 // Method pada array
-let arr = ["Muhammad", "Rendy", "Alfian"];
+// let arr = ["Muhammad", "Rendy", "Alfian"];
 // 1. join
 // console.log(arr.join(" - "));
 
@@ -45,4 +45,20 @@ let arr = ["Muhammad", "Rendy", "Alfian"];
 // sama seperti push & pop, tapi ini menambah dan menghapus elemen pertama.
 // arr.unshift("Dodo");
 // arr.shift();
-console.log(arr.join(" - "));
+// console.log(arr.join(" - "));
+
+let arr = ["Muhammad", "Rendy", "Alfian"];
+// 4. splice
+// splice(indexAwal, mauDiHapusBerapa, elemenBaru, elemenBaru2, ...)
+// arr.splice(1, 2, "Tingkir", "Wowo");
+// console.log(arr.join(" - "));
+
+// 5. slice
+// slice(awal, akhir)
+let arr1 = ["Muhammad", "Rendy", "Alfian", "Mamad", "Vian"];
+
+// untuk slice ini memang harus berada didalam variable baru, jika tidak maka tidak berjalan methodnya.
+let arr2 = arr1.slice(1, 4);
+
+console.log(arr1.join(" - "));
+console.log(arr2.join(" - "));
