@@ -1,4 +1,4 @@
-const penumpang = ["rendy", undefined, "renron"];
+const penumpang = [];
 let tambahPenumpang = function (namaPenumpang, penumpang) {
   // jika angkot kosong
   if (penumpang.length == 0) {
@@ -30,6 +30,29 @@ let tambahPenumpang = function (namaPenumpang, penumpang) {
         // kembalikan isi arat & keluar dari function
         return penumpang;
       }
+    }
+  }
+};
+
+let hapusPenumpang = function (namaPenumpang, penumpang) {
+  // jika angkot kosong
+  if (penumpang.length == 0) {
+    // tampilkan pesan bahwa angkot kosong, dan tidak mungkin ada penumpang turun
+    console.log("Angkot masih kosong");
+    return penumpang;
+  } else {
+    // telusuri kursi dari awal
+    for (let i = 0; i < penumpang.length; i++) {
+      // hapus penumpang degan mengubah namanya, menjadi undefined
+      if (penumpang[i] == namaPenumpang) {
+        penumpang[i] = undefined;
+      }
+      //jika tidak ada nama yang sesuai
+      else if (i == penumpang.length - 1);
+      // tampilkan pesan kesalahannya
+      console.log(namaPenumpang + " tidak ada didalam angkot");
+      // kembalikan isi array & keluar dari function
+      return penumpang;
     }
   }
 };
