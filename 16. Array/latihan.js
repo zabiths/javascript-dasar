@@ -1,4 +1,5 @@
 const penumpang = [];
+// namaPenumpang ini akan masuk ke array penumpang.
 let tambahPenumpang = function (namaPenumpang, penumpang) {
   // jika angkot kosong
   if (penumpang.length == 0) {
@@ -7,9 +8,11 @@ let tambahPenumpang = function (namaPenumpang, penumpang) {
     // kembalikan isi array & keluar dari function
     return penumpang;
   } else {
+    //kalo penumpangnya ada
     // telusuri seluruh kursi dari awal
     for (let i = 0; i < penumpang.length; i++) {
       // jika ada kursi kosong
+      // [i] ini nomor kursinya
       if (penumpang[i] == undefined) {
         // tambah penumpang di kursi tersebut
         penumpang[i] = namaPenumpang;
@@ -46,13 +49,15 @@ let hapusPenumpang = function (namaPenumpang, penumpang) {
       // hapus penumpang degan mengubah namanya, menjadi undefined
       if (penumpang[i] == namaPenumpang) {
         penumpang[i] = undefined;
+        return penumpang;
       }
       //jika tidak ada nama yang sesuai
-      else if (i == penumpang.length - 1);
-      // tampilkan pesan kesalahannya
-      console.log(namaPenumpang + " tidak ada didalam angkot");
-      // kembalikan isi array & keluar dari function
-      return penumpang;
+      else if (i == penumpang.length - 1) {
+        // tampilkan pesan kesalahannya
+        console.log(namaPenumpang + " tidak ada didalam angkot");
+        // kembalikan isi array & keluar dari function
+        return penumpang;
+      }
     }
   }
 };
